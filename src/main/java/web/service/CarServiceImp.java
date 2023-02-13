@@ -19,7 +19,8 @@ public class CarServiceImp implements CarService {
         carList.add(new Car("Lifan", "China", 789));
     }
 
-    public List<Car> getCarList(int count) {
+    @Override
+    public List<Car> getCarListCount(int count) {
         if (count >= 5) {
             return carList;
         } else {
@@ -31,7 +32,8 @@ public class CarServiceImp implements CarService {
         }
     }
 
-    public List<Car> getCarList() {
+    @Override
+    public List<Car> getCarListAll() {
         return carList;
     }
 }
